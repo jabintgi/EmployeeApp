@@ -6,6 +6,6 @@
     android:background="@color/bg"
     android:fillViewport="true"
     tools:context=".pages.RegisterPage">
-    
+
 
 </ScrollView>
