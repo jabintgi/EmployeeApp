@@ -12,8 +12,8 @@
     </style>
 
     <style name="loginTheme" parent="AppTheme">
-        <item name="android:colorControlNormal">@color/text_light</item>
-        <item name="android:textColorHint">@color/text_light</item>
+        <item name="android:colorControlNormal">@color/grey</item>
+        <item name="android:textColorHint">@color/grey</item>
         <item name="colorAccent">@color/text</item>
     </style>
 

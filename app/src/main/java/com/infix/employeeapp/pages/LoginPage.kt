@@ -43,9 +43,6 @@ class LoginPage : AppCompatActivity() {
         ////valid
         if (empId.isNotEmpty() && password.isNotEmpty()) {
 
-                pbLogin.visibility = View.VISIBLE
-                btnLogin.visibility = View.GONE
-
                 val userText = AppPref.getText(loggedUser)
                 if (userText!!.isNotEmpty()) {
                     val user: User = Gson().fromJson(userText, User::class.java)
@@ -64,8 +61,6 @@ class LoginPage : AppCompatActivity() {
     }
 
     private fun showError(msg: String) {
-        pbLogin.visibility = View.GONE
-        btnLogin.visibility = View.VISIBLE
         Method.showSnackBar(llLoginRoot, msg, Key.error)
     }
 

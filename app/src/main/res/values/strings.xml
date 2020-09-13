@@ -5,4 +5,26 @@
     <string name="login">Sign In</string>
     <string name="employee_login">Employee Login</string>
     <string name="create_account">Create Account</string>
+    <string name="pick_profile_image">Pick dp</string>
+    <string name="employee_registration">Registration</string>
+    <string name="go_back">Go Back</string>
+    <string name="name">Name</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="job_details">Job Details</string>
+    <string name="login_details">Login Details</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="email_id">Email Id</string>
+    <string name="address">Address</string>
+    <string name="qualification">Qualification</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="land">Landline No</string>
+    <string name="company_name">Company name</string>
+    <string name="working_branch">Working branch</string>
+    <string name="department">Department</string>
+    <string name="designation">Designation</string>
+    <string name="joing_date">Join date</string>
+    <string name="job_type">Job type</string>
+    <string name="reporting_to">Reporting to</string>
+    <string name="create_password">Create password</string>
+    <string name="confirm_password">Confirm password</string>
 </resources>

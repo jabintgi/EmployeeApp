@@ -1,5 +1,7 @@
 package com.infix.employeeapp.models
 
+import android.net.Uri
+
 data class User (
     val id:String,
     val name:String,
@@ -8,7 +10,7 @@ data class User (
     val department:String,
     val designation:String,
     val DOJ:String,
-    val profileImg:String,
+    val profileImg: Uri,
     val mobile:String,
     val employmentType:String,
     val email:String,
