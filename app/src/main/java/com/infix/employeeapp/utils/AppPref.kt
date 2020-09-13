@@ -9,6 +9,7 @@ object AppPref {
     private var pref: SharedPreferences? = null
 
     const val loggedUser = "loggedUser"
+    var isLogged = ""
 
     @Synchronized
     fun getInstance(c: Context) {

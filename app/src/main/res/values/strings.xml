@@ -23,7 +23,7 @@
     <string name="department">Department</string>
     <string name="designation">Designation</string>
     <string name="joing_date">Join date</string>
-    <string name="job_type">Job type</string>
+    <string name="job_type">Employee type</string>
     <string name="reporting_to">Reporting to</string>
     <string name="create_password">Create password</string>
     <string name="confirm_password">Confirm password</string>

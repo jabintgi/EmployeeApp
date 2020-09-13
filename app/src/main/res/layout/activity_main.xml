@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -52,7 +53,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:drawablePadding="8dp"
+                android:drawablePadding="4dp"
                 android:id="@+id/tvMob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,23 +103,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/appBarLayout">
 
-            <TextView
-                android:layout_weight="1"
-                android:padding="4dp"
-                android:id="@+id/tvBlood"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/app_name"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                app:drawableTopCompat="@drawable/ic_syringe" />
-
-            <View
-                android:background="@color/grey"
-                android:layout_width="1dp"
-                android:layout_height="match_parent"/>
-
 
             <TextView
                 android:layout_weight="1"
@@ -132,6 +116,25 @@
                 android:textStyle="bold"
                 app:drawableTopCompat="@drawable/ic_qualification" />
 
+            <View
+                android:alpha="0.5"
+                android:background="@color/grey"
+                android:layout_width="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:id="@+id/tvBlood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:drawableTopCompat="@drawable/ic_syringe" />
 
         </LinearLayout>
 
@@ -152,46 +155,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
 
-            <LinearLayout
-                android:padding="16dp"
-                android:background="@drawable/bg_address"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+            <androidx.cardview.widget.CardView
                 app:layout_constraintStart_toEndOf="@+id/ivHome"
-                app:layout_constraintBottom_toTopOf="@+id/ivHome">
+                app:layout_constraintBottom_toTopOf="@+id/ivHome"
+                android:layout_width="wrap_content"
+                app:cardElevation="32dp"
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvAddress"
-                    android:textSize="12sp"
-                    android:textColor="@color/white"
+                <LinearLayout
+                    android:padding="16dp"
+                    android:background="@drawable/bg_address"
                     android:layout_width="wrap_content"
+                    android:minWidth="140dp"
+                    android:translationZ="24dp"
+                    android:elevation="24dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/app_name" />
+                    android:orientation="vertical"
+                    >
 
-                <TextView
-                    android:id="@+id/tvEmail"
-                    android:textSize="12sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="4dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:drawablePadding="8dp"
-                    app:drawableStartCompat="@drawable/ic_email" />
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name" />
 
-                <TextView
-                    android:id="@+id/tvLandLine"
-                    android:textSize="12sp"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="4dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:drawablePadding="8dp"
-                    app:drawableStartCompat="@drawable/ic_lan_phone" />
+                    <TextView
+                        android:id="@+id/tvLandLine"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:drawablePadding="8dp"
+                        app:drawableStartCompat="@drawable/ic_lan_phone" />
 
-            </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
 
             <View
                 android:id="@+id/ivHome"
@@ -199,8 +204,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="24dp"
-                android:layout_height="24dp"/>
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
 
             <com.airbnb.lottie.LottieAnimationView
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -217,12 +222,116 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clMap">
+
+            <TextView
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvEmail"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_email" />
+
+            <TextView
+                android:layout_marginTop="@dimen/mt_ip"
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvNRC"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_nrc" />
 
 
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/job_details"
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
+            <TextView
+                android:layout_marginTop="@dimen/mt_ip"
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvCompanyName"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_company" />
 
+            <TextView
+                android:layout_marginTop="@dimen/mt_ip"
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvBranch"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_branch" />
 
+            <TextView
+                android:layout_marginTop="@dimen/mt_ip"
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvDesignation"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_job" />
 
+            <TextView
+                android:layout_marginTop="@dimen/mt_ip"
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvDepartment"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_department" />
+
+            <TextView
+                android:layout_marginTop="@dimen/mt_ip"
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvDOJ"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_date" />
+
+            <TextView
+                android:layout_marginTop="@dimen/mt_ip"
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvEmployeeType"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_employee_type" />
+
+            <TextView
+                android:layout_marginTop="@dimen/mt_ip"
+                android:textColor="@color/bg"
+                android:drawablePadding="8dp"
+                android:id="@+id/tvReportTo"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_report" />
+
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

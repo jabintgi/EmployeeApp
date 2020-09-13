@@ -64,6 +64,7 @@ class LoginPage : AppCompatActivity() {
     }
 
     private fun openDashboard() {
+        AppPref.putText(AppPref.isLogged, "true")
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()

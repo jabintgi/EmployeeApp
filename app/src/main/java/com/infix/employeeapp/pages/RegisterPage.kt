@@ -17,6 +17,7 @@ import com.infix.employeeapp.MainActivity
 import com.infix.employeeapp.R
 import com.infix.employeeapp.models.User
 import com.infix.employeeapp.utils.AppPref
+import com.infix.employeeapp.utils.AppPref.isLogged
 import com.infix.employeeapp.utils.AppPref.loggedUser
 import com.infix.employeeapp.utils.Key
 import com.infix.employeeapp.utils.Method
@@ -90,6 +91,7 @@ class RegisterPage : AppCompatActivity() {
         val newUser = User(empID,name,branch,address,department,designation,DOJ, ""+profileImage,mob,jobType,email,
         landlineNo,bloodGroup,companyName,nrc,qualification,reportTo,pwd)
 
+        AppPref.putText(isLogged, "true")
         AppPref.putText(loggedUser, Gson().toJson(newUser))
         openDashboard()
     }

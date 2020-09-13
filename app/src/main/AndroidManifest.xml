@@ -14,9 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".pages.ProfilePage"
-            android:screenOrientation="portrait" />
+
         <activity
             android:theme="@style/loginTheme"
             android:name=".pages.RegisterPage"
