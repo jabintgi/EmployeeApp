@@ -7,7 +7,6 @@ import com.infix.employeeapp.models.User
 object AppPref {
 
     private var pref: SharedPreferences? = null
-    var USER: User? = null
 
     const val loggedUser = "loggedUser"
 

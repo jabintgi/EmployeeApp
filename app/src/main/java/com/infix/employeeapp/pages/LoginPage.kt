@@ -47,7 +47,6 @@ class LoginPage : AppCompatActivity() {
                 if (userText!!.isNotEmpty()) {
                     val user: User = Gson().fromJson(userText, User::class.java)
                     if (user.id == empId && user.password == password) {
-                        AppPref.USER = user
                         openDashboard()
                         return
                     }

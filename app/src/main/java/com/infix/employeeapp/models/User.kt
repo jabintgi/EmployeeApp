@@ -1,5 +1,6 @@
 package com.infix.employeeapp.models
 
+import android.graphics.Bitmap
 import android.net.Uri
 
 data class User (
@@ -10,9 +11,9 @@ data class User (
     val department:String,
     val designation:String,
     val DOJ:String,
-    val profileImg: Uri,
+    val profileImg: String,
     val mobile:String,
-    val employmentType:String,
+    val jobType:String,
     val email:String,
     val landLineNo:String,
     val bloodGroup:String,

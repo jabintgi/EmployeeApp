@@ -18,7 +18,7 @@ object Method {
     }
 
     fun showSnackBar(root: View, message: String, messageTypeColor: Int) {
-        val snackBar: Snackbar = Snackbar.make(root, message, 5000)
+        val snackBar: Snackbar = Snackbar.make(root, message, 3000)
         snackBar.view.setBackgroundColor(ContextCompat.getColor(root.context, messageTypeColor))
         snackBar.show()
     }

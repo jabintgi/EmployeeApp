@@ -73,6 +73,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
                     android:layout_width="match_parent"
                     android:inputType="textCapSentences"
                     android:layout_height="wrap_content"
@@ -81,13 +82,13 @@
                     android:singleLine="true"
                     android:textColor="@color/text" />
             </com.google.android.material.textfield.TextInputLayout>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="@dimen/mt_ip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMob"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/mobile_number"
@@ -97,13 +98,13 @@
                     android:singleLine="true"
                     android:textColor="@color/text" />
             </com.google.android.material.textfield.TextInputLayout>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="@dimen/mt_ip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/email_id"
@@ -111,13 +112,13 @@
                     android:singleLine="true"
                     android:textColor="@color/text" />
             </com.google.android.material.textfield.TextInputLayout>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="@dimen/mt_ip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/address"
@@ -126,13 +127,13 @@
                     android:imeOptions="actionNext"
                     android:textColor="@color/text" />
             </com.google.android.material.textfield.TextInputLayout>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="@dimen/mt_ip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etQualification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/qualification"
@@ -141,21 +142,22 @@
                     android:singleLine="true"
                     android:textColor="@color/text" />
             </com.google.android.material.textfield.TextInputLayout>
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="@dimen/mt_ip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBlood"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/blood_group"
                     android:imeOptions="actionNext"
-                    android:inputType="textCapCharacters"
+                    android:inputType="textCapSentences"
                     android:singleLine="true"
                     android:textColor="@color/text" />
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="@dimen/mt_ip"
@@ -163,6 +165,25 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNRC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nrc_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="@dimen/mt_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLand"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/land"
@@ -187,6 +208,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCompany"
                     android:layout_width="match_parent"
                     android:inputType="textCapSentences"
                     android:layout_height="wrap_content"
@@ -201,6 +223,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBranch"
                     android:layout_width="match_parent"
                     android:inputType="textCapSentences"
                     android:layout_height="wrap_content"
@@ -215,6 +238,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDept"
                     android:layout_width="match_parent"
                     android:inputType="textCapSentences"
                     android:layout_height="wrap_content"
@@ -229,6 +253,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDesignation"
                     android:layout_width="match_parent"
                     android:inputType="textCapSentences"
                     android:layout_height="wrap_content"
@@ -243,9 +268,11 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDOJ"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/joing_date"
+                    android:focusable="false"
                     android:imeOptions="actionNext"
                     android:singleLine="true"
                     android:textColor="@color/text" />
@@ -256,6 +283,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etJobType"
                     android:layout_width="match_parent"
                     android:inputType="textCapSentences"
                     android:layout_height="wrap_content"
@@ -270,6 +298,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReportTo"
                     android:layout_width="match_parent"
                     android:inputType="textCapSentences"
                     android:layout_height="wrap_content"
@@ -278,7 +307,6 @@
                     android:singleLine="true"
                     android:textColor="@color/text" />
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <TextView
                 android:textStyle="bold"
@@ -294,6 +322,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPwd"
                     android:layout_width="match_parent"
                     android:inputType="textPassword"
                     android:layout_height="wrap_content"
@@ -308,6 +337,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCpwd"
                     android:layout_width="match_parent"
                     android:inputType="textPassword"
                     android:layout_height="wrap_content"

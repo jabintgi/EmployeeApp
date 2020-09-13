@@ -27,4 +27,6 @@
     <string name="reporting_to">Reporting to</string>
     <string name="create_password">Create password</string>
     <string name="confirm_password">Confirm password</string>
+    <string name="nrc_number">NRC number</string>
+    <string name="logout">Logout</string>
 </resources>
