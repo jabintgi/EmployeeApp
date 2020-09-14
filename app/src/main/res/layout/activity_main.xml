@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:overScrollMode="never"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -154,14 +155,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
 
-            <androidx.cardview.widget.CardView
-                app:layout_constraintStart_toEndOf="@+id/ivHome"
-                app:layout_constraintBottom_toTopOf="@+id/ivHome"
-                android:layout_width="wrap_content"
-                app:cardElevation="32dp"
-                android:layout_height="wrap_content">
+
 
                 <LinearLayout
+                    app:layout_constraintStart_toEndOf="@+id/ivHome"
+                    app:layout_constraintBottom_toTopOf="@+id/ivHome"
                     android:padding="16dp"
                     android:background="@drawable/bg_address"
                     android:layout_width="wrap_content"
@@ -188,12 +186,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/app_name"
-                        android:drawablePadding="8dp"
+                        android:drawablePadding="4dp"
                         app:drawableStartCompat="@drawable/ic_lan_phone" />
 
                 </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
 
 
@@ -223,7 +219,7 @@
 
         <LinearLayout
             android:layout_marginTop="24dp"
-            android:padding="16dp"
+            android:padding="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -232,6 +228,7 @@
             app:layout_constraintTop_toBottomOf="@+id/clMap">
 
             <TextView
+                android:textSize="13sp"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"
                 android:id="@+id/tvEmail"
@@ -241,6 +238,7 @@
                 app:drawableStartCompat="@drawable/ic_email" />
 
             <TextView
+                android:textSize="13sp"
                 android:layout_marginTop="@dimen/mt_ip"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"
@@ -253,14 +251,15 @@
 
             <TextView
                 android:textStyle="bold"
-                android:layout_marginBottom="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="32dp"
                 android:text="@string/job_details"
-                android:textColor="@color/text"
+                android:textColor="@color/green"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textSize="13sp"
                 android:layout_marginTop="@dimen/mt_ip"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"
@@ -271,6 +270,7 @@
                 app:drawableStartCompat="@drawable/ic_company" />
 
             <TextView
+                android:textSize="13sp"
                 android:layout_marginTop="@dimen/mt_ip"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"
@@ -281,6 +281,7 @@
                 app:drawableStartCompat="@drawable/ic_branch" />
 
             <TextView
+                android:textSize="13sp"
                 android:layout_marginTop="@dimen/mt_ip"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"
@@ -291,6 +292,7 @@
                 app:drawableStartCompat="@drawable/ic_job" />
 
             <TextView
+                android:textSize="13sp"
                 android:layout_marginTop="@dimen/mt_ip"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"
@@ -301,6 +303,7 @@
                 app:drawableStartCompat="@drawable/ic_department" />
 
             <TextView
+                android:textSize="13sp"
                 android:layout_marginTop="@dimen/mt_ip"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"
@@ -311,6 +314,7 @@
                 app:drawableStartCompat="@drawable/ic_date" />
 
             <TextView
+                android:textSize="13sp"
                 android:layout_marginTop="@dimen/mt_ip"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"
@@ -321,6 +325,7 @@
                 app:drawableStartCompat="@drawable/ic_employee_type" />
 
             <TextView
+                android:textSize="13sp"
                 android:layout_marginTop="@dimen/mt_ip"
                 android:textColor="@color/bg"
                 android:drawablePadding="8dp"

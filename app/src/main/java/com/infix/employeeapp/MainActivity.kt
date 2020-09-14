@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         AppPref.getInstance(this)
 
         val isLogged = AppPref.getText(isLogged)
-        if(isLogged!!.isEmpty()){
+        if(isLogged!! == ""){
             openLogin()
             return
         }
@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun initData() {
-        isLogged = "true"
         Glide.with(this).load(user.profileImg).placeholder(R.drawable.user).into(profile_image)
 
         tvEmpID.text = user.id
